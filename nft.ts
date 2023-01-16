@@ -31,7 +31,7 @@ const sdk = new SDK(auth);
 // Define the properties of the token, including its description, external URL, image, name, and attributes
 const tokenMetadata = Metadata.openSeaTokenLevelStandard({
   description: "Fantastic creature of different emojis",
-  external_url: "https://google.com/",
+  external_url: "https://consensys.net/",
   image: await sdk.storeFile({
     // Store the image from the given URL
     metadata:
@@ -58,7 +58,7 @@ const collectionMetadata = Metadata.openSeaCollectionLevelStandard({
     metadata:
       "https://res.cloudinary.com/olanetsoft/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1672327921/demo.jpg", // The URL of the image file
   }),
-  external_link: "https://google.com/", // Sets the external link property of the collection
+  external_link: "https://consensys.net/", // Sets the external link property of the collection
 });
 
 console.log("Collection Metadata:- ", collectionMetadata); // Logs the collection metadata to the console
